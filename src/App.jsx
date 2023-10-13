@@ -1,18 +1,28 @@
-import React, { Component } from "react";
-import imageSSIM from "image-ssim";
-import "./App.css";
+import React from "react";
+/* import imageSSIM from "image-ssim"; */
+import "./styles/style.sass";
+import { Routes, Route } from "react-router-dom";
+import Header from "./componets/Header";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Footer from "./componets/Footer";
 
-/* function App() {
+function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <Header />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
 
-export default App; */
+export default App;
 
-class ImageComparison extends Component {
+/* class ImageComparison extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,3 +84,4 @@ class ImageComparison extends Component {
 }
 
 export default ImageComparison;
+ */
