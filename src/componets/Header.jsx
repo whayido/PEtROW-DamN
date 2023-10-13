@@ -5,23 +5,25 @@ const Header = () => {
   return (
     <>
       <header>
-        <NavLink to={""} className="logo">
-          Petrov Govno
-        </NavLink>
+        <section id="head">
+          <nav>
+            <NavLink to={""} className="logo">
+              Govno
+            </NavLink>
 
-        <nav>
-          <NavLink to={"/templates"} className="vvv">
-            Начало
-          </NavLink>
+            <NavLink to={"/templates"} className="vvv">
+              Начало
+            </NavLink>
 
-          <NavLink to={"/guide"} className="vvv">
-            Инструкция
-          </NavLink>
+            <NavLink to={"/guide"} className="vvv">
+              Инструкция
+            </NavLink>
 
-          <NavLink to={"/creator"} className="vvv">
-            Авторы
-          </NavLink>
-        </nav>
+            <NavLink to={"/creator"} className="vvv">
+              Авторы
+            </NavLink>
+          </nav>
+        </section>
       </header>
     </>
   );
