@@ -7,9 +7,9 @@ const Header = () => {
       <header>
         <section id="head">
           <nav>
-            <NavLink to={""} className="logo">
+            <a href="/" className="logo">
               Govno
-            </NavLink>
+            </a>
 
             <NavLink to={"/templates"} className="vvv">
               Начало
